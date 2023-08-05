@@ -9,3 +9,12 @@ toggleButton.addEventListener('click', () => {
   toggleButton.classList.toggle('collapsed');
   footer.classList.toggle('expanded');
 });
+
+document.getElementById("openPopupBtn").addEventListener("click", function () {
+  document.getElementById("pdfPopup").style.display = "block";
+});
+
+
+document.getElementById("closePopupBtn").addEventListener("click", function () {
+  document.getElementById("pdfPopup").style.display = "none";
+});
