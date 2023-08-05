@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Collapsible Sidebar</title>
-  <link rel="stylesheet" href="static/style.css">
+  <title>Changwen Gong</title>
+  <link rel="stylesheet" href="static/main_style.css">
 </head>
 <body>
   <header>
@@ -23,8 +23,73 @@
 
   <div id="content">
     <div id="toggleButton">&#9776;</div>
-    <h1>Main Content</h1>
-    <p>This is the main content of the page.</p>
+      <div class="image-container">
+        <img class="pictures larger-image" src="static/TradingBots/main.png" alt="Image 3">
+      </div>
+      <h2>My Trade Bots</h2>
+      <p>Currently, I have a fully functional Trailing Martingale Bot and am currently working on tweeking and debugging the Grid Bot and Smart/Algo Trading Bot. All the codes for these bots will be available on my Github under my CryptoTrade Project. Trading bots helps users by taking away a lot of the emotions related to trading and can run 24/7, making them much more effective traders. As always, this is not financial advice, and any use of trading bots comes with risks.</p>
+
+      <h2>Trailing Martingale Bot</h2>
+      <h3>What is a Trailing Martingale Bot?</h3>
+      <p>
+        A trailing martingale strategy is a popular approach used in crypto trading bots. It combines elements of the martingale strategy, which increases position sizes after losses, with trailing stop orders to protect profits. With this strategy, the bot continuously monitors the price movement of a cryptocurrency asset. When the price moves favorably, the bot adjusts the stop-loss level to lock in profits and limit potential losses. However, if the price moves against the position, the bot incrementally increases the position size to potentially recover from losses.      </p>
+      <h3>Example</h3>
+      <p>
+        Let's say the bot initiates a buy order for Bitcoin at $50,000. The trailing stop-loss is set at 5%, so if the price rises to $52,500, the stop-loss will be adjusted to $50,000 (the original purchase price). If the price keeps rising, the stop-loss will trail the price to protect the gains. But if the price drops by 5% to $47,500, the bot will place an additional buy order at $47,500 to increase the position size and reduce the average entry price.      </p>
+      <div class="image-container">
+        <img class="pictures" src="static/TradingBots/martingale.png" alt="Image 3">
+      </div>
+
+      <h2>Grid Bot</h2>
+      <h3>What is a Grid Bot?</h3>
+      <p>
+        The grid trading strategy used in crypto trading bots involves placing multiple buy and sell orders at regular intervals, creating a grid-like pattern. The bot aims to profit from price fluctuations within a predefined range. When the price moves up, the bot sells a portion of the holdings to realize profits. Conversely, if the price moves down, the bot buys more assets to lower the average cost. The grid structure allows the bot to generate profits in both bull and bear markets, capturing price movements within the predetermined range.      </p>
+      <h3>Example</h3>
+      <p>
+        Let's assume the bot starts with a grid of buy orders for Ethereum with an interval of $100. The first buy order is placed at $3,000, and subsequent buy orders are placed every $100 decrease in price ($2,900, $2,800, and so on). Similarly, the bot places sell orders at regular intervals above the original purchase price ($3,100, $3,200, $3,300, etc.). As the price fluctuates, the bot executes buy and sell orders, aiming to profit from the price movements.      </p>
+      <div class="image-container">
+        <img class="pictures" src="static/TradingBots/grid.png" alt="Image 3">
+      </div>
+
+      <h2>Smart/Algo Bot</h2>
+      <h3>What is a Smart or Algorithmic Trading Bot?</h3>
+      <p>
+        This bot can use many different trading strategies, but mine currently implements the OBV and Bollinger Band trading strategy. The OBV (On-Balance Volume) and Bollinger Band trading strategy combines two technical indicators to make informed trading decisions. The On-Balance Volume measures buying and selling pressure by analyzing the volume of assets traded. The Bollinger Bands indicate the volatility of the asset's price. The trading bot uses these indicators to identify potential entry and exit points. It buys when the OBV indicates strong buying pressure and the price touches the lower Bollinger Band, signaling potential oversold conditions. Conversely, it sells when the OBV indicates strong selling pressure and the price touches the upper Bollinger Band, indicating potential overbought conditions.      </p>
+      <h3>Example</h3>
+      <p>
+        Let's assume the bot is trading Litecoin with the OBV and Bollinger Band strategy. When the OBV shows a significant increase in volume, indicating strong buying pressure, and the price touches the lower Bollinger Band, the bot executes a buy order. Conversely, when the OBV indicates strong selling pressure, and the price touches the upper Bollinger Band, the bot places a sell order to take advantage of potential overbought conditions. The strategy aims to capitalize on price reversals based on OBV signals and Bollinger Band indications.
+      </p>
+      <div class="image-container">
+        <img class="pictures" src="static/TradingBots/smart.png" alt="Image 3">
+      </div>
+
+      <h2>Future Bots</h2>
+      <h3>AI Trading Bot</h3>
+      <p>
+        An AI trading bot leverages artificial intelligence algorithms and machine learning techniques to make data-driven trading decisions. It analyzes vast amounts of historical market data, identifies patterns, and learns from past trading performance. With real-time data processing, the AI bot can adapt quickly to changing market conditions, enabling it to execute trades with improved accuracy and efficiency. The AI bot's ability to continuously learn and optimize strategies makes it a powerful tool for both novice and experienced traders.
+      </p>
+      <h3>Rebalancing Bot</h3>
+      <p>
+        A rebalancing trading bot is designed to maintain a predefined asset allocation in a portfolio. As market prices fluctuate, the bot automatically buys or sells assets to bring the portfolio back to its original allocation. This disciplined approach ensures that the portfolio remains in line with the trader's risk tolerance and investment objectives. Rebalancing bots are commonly used in long-term investment strategies, as they help control risk and minimize the impact of market volatility.
+      </p>
+      <h3>Arbitrage Bot</h3>
+      <p>
+        An arbitrage trading bot exploits price discrepancies of an asset across different exchanges or markets. It continuously monitors prices and order books in various platforms and executes trades when it identifies opportunities for profit. For example, if Bitcoin is trading at a lower price on Exchange A compared to Exchange B, the bot will buy on Exchange A and simultaneously sell on Exchange B, profiting from the price difference. Arbitrage bots are designed to take advantage of inefficiencies in the market and typically execute trades at lightning speed to capitalize on fleeting opportunities.
+      </p>
+      <div class="image-container">
+        <img class="pictures" src="static/TradingBots/future.jpg" alt="Image 3">
+      </div>
+      
+      <div id='points'>
+      <h2>References:</h2>
+      <ul>
+        <li><a href="https://medium.com/coinmonks/pionex-review-exchange-with-crypto-trading-bot-1e459d0191ea" class="reference-link">https://medium.com/coinmonks/pionex-review-exchange-with-crypto-trading-bot-1e459d0191ea</a></li>
+        <li><a href="https://www.pionex.com/blog/martingale-bot-trailing-mode/" class="reference-link">https://www.pionex.com/blog/martingale-bot-trailing-mode/</a></li>
+        <li><a href="https://www.tradingview.com/script/cmtgS4AC-Bollinger-Bands-OBV/" class="reference-link">https://www.tradingview.com/script/cmtgS4AC-Bollinger-Bands-OBV/</a></li>
+      </ul>
+      </div>
+
+      <h3> Once again, this is not financial advice. I am not a financial advisor. I am just a guy who likes to code and learn about crypto. </h3>
   </div>
 
   <footer>
