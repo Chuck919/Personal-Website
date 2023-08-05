@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Collapsible Sidebar</title>
-  <link rel="stylesheet" href="static/style.css">
+  <title>Changwen Gong</title>
+  <link rel="stylesheet" href="static/main_style.css">
 </head>
 <body>
   <header>
@@ -23,10 +23,88 @@
 
   <div id="content">
     <div id="toggleButton">&#9776;</div>
-    <h1>Main Content</h1>
-    <p>This is the main content of the page.</p>
-  </div>
+    <div class="centered-button">
+      <button class="btn-generic">Website Coming Soon!</button>
+    </div>
 
+      <div class="image-container">
+        <img class="pictures larger-image" src="static/CryptoTrade/landing.png" alt="Image 3">
+      </div>
+      <h2>Introduction and Thought Process</h2>
+      <p>
+        KEEP IN MIND THIS IS NOT FINANCIAL ADVICE. 
+      </p>
+      <p>
+        People use crypto trading bots for various reasons, primarily to capitalize on the fast-paced and volatile nature of the cryptocurrency market. These automated software programs are designed to execute trades based on predefined strategies and algorithms, enabling users to benefit from market opportunities 24/7 without constant manual monitoring. Crypto trading bots can process vast amounts of data, analyze multiple indicators simultaneously, and execute trades at high speeds, which can be challenging for human traders. Additionally, bots can help eliminate emotional biases and impulsive decisions, thus promoting disciplined trading. By utilizing these tools, traders aim to enhance their chances of achieving profitable outcomes while optimizing their time and resources in the highly competitive and ever-changing cryptocurrency landscape. 
+      </p>
+      <p>
+      There exists many different crypto trading platforms out there, however, I wanted to experiment with my own trading bots. Hence, Crypto Trade. Currently, this project only supports Binance.US (becaues Binance is one of the most popular exchanges for crypto bots), but in the future, I hope to add in more exchanges. This project is also made to be ran on pythonanywhere, so a lot of functionality (websockets, rabbitMQ, celery, threading, etc.) are not implemented into the project. All code can be found in my Github repository for this project.
+      </p>
+      <div class="image-container">
+        <img class="pictures" src="static/CryptoTrade/user graph.png" alt="Image 1">
+        <img class="pictures" src="static/CryptoTrade/supports.png" alt="Image 2">
+      </div>
+
+      <h2>User Sign Up and Sign In</h2>
+      <p>
+        Users can first Sign Up for an account on Crypto Trade, which requires the username, first and last name, email, password, and Binance.US API connection informtaion. After signing up, users will receive an email to verify and activate their account. 
+      </p>
+      <div class="image-container">
+        <img class="pictures" src="static/CryptoTrade/sign up.png" alt="Image 3">
+      </div>
+      <p>
+        New users will receive an email to verify and activate their account, and they must click on the link to activate their account before signing in. They should receieve an email similar to the one below.
+      </p>
+      <div class="image-container">
+        <img class="pictures" src="static/CryptoTrade/account email.png" alt="Image 3">
+      </div>
+      <p>
+        After activating their account, users can sign in with their username and password.
+      </p>
+      <div class="image-container">
+        <img class="pictures" src="static/CryptoTrade/sign in.png" alt="Image 3">
+      </div>
+
+      <h2>User Password Reset</h2>
+
+      <p>
+        I have also included a password reset functionality. Users can click on the "Forgot Password" link on the landing page to reset their password.
+      </p>
+      <div class="image-container">
+        <img class="pictures" src="static/CryptoTrade/password reset.png" alt="Image 3">
+      </div>
+      <p>
+        They will receive an email similar to the one below with a link to reset their password. The email also includes the username associated with the account in case that is forgotten as well.
+      </p>
+      <div class="image-container">
+        <img class="pictures" src="static/CryptoTrade/reset email.png" alt="Image 3">
+      </div>
+      <p>
+        After clicking on the link, users will be redirected to a page where they can reset their password. If successful, they will be redircted to the sign in page.
+      </p>
+      
+      
+      <h2>Bots and Future Functionality</h2>
+      <p>
+        Currently, the user home page is under progress, and bot implementation are also in testing. There is a trailing martingale bot that is currently working, and that code will be under the bots folder in the Github repository for this project. However, you can also view the bots I am planning on creating under the Trade Bots section.
+      </p>
+
+      <div class="image-container">
+        <img class="pictures" src="static/CryptoTrade/bots.jpg" alt="Image 3">
+      </div>
+
+      <div id='points'>
+      <h2>References:</h2>
+      <ul>
+        <li><a href="https://en.cryptonomist.ch/2019/08/21/research-crypto-trading-bots/" class="reference-link">https://en.cryptonomist.ch/2019/08/21/research-crypto-trading-bots/</a></li>
+        <li><a href="https://www.analyticsinsight.net/pros-and-cons-different-roles-of-crypto-trading-bots/" class="reference-link">https://www.analyticsinsight.net/pros-and-cons-different-roles-of-crypto-trading-bots/</a></li>
+      </ul>
+      </div>
+    
+
+    <h3> Once again, this is not financial advice. I am not a financial advisor. I am just a guy who likes to code and learn about crypto. </h3>
+
+  </div>
   <footer>
     <ul>
       <li><a href="mailto:changwen919@gmail.com" class="btn-link">My Email</a></li>
